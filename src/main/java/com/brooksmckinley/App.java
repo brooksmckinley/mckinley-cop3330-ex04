@@ -1,9 +1,20 @@
 package com.brooksmckinley;
 
+import java.util.Scanner;
+
 public class App {
 
     public static void main(String[] args) {
-
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter a noun: ");
+        String noun = scan.nextLine();
+        System.out.print("Enter a verb: ");
+        String verb = scan.nextLine();
+        System.out.print("Enter an adjective: ");
+        String adjective = scan.nextLine();
+        System.out.print("Enter an adverb: ");
+        String adverb = scan.nextLine();
+        System.out.println(madlib(noun, verb, adjective, adverb));
     }
 
     public static String madlib(String noun, String verb, String adjective, String adverb) {
